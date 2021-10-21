@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/first_num"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:gravity="center|end"
+            android:hint="0"
+            android:padding="10dp"
+            android:textSize="50dp"
+            />
+
+        <TextView
+            android:id="@+id/second_num"
+            android:layout_width="120dp"
+            android:layout_height="105dp"
+            android:layout_toRightOf="@id/first_num"
+            android:gravity="center|end"
+            android:hint="0"
+            android:padding="10dp"
+            android:textSize="50dp"
+            />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="120dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/second_num"
+            android:gravity="center|end"
+            android:hint="0"
+            android:padding="10dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/calc_del"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_toRightOf="@id/num3"
+            android:text="/"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num9"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_toRightOf="@id/num8"
+            android:text="9"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num8"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_toRightOf="@id/num7"
+            android:text="8"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num7"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="320dp"
+            android:text="7"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num9"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num5"
+            android:text="6"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num4"
+            android:text="5"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/num7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="4"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num2"
+            android:text="3"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num2"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num1"
+            android:text="2"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/num1"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1"
+            android:textSize="10pt"
+            />
+
+
+
+        <Button
+            android:id="@+id/num0"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/calc_C"
+            android:text="0"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/calc_C"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="С"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/calc_plus"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/calc_minus"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/calc_equal"
+            android:text="+"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/calc_equal"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/num3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num0"
+            android:text="="
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/calc_ymn"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/calc_del"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num3"
+            android:text="*"
+            android:textSize="10pt"
+            />
+
+        <Button
+            android:id="@+id/calc_minus"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/calc_ymn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/num9"
+            android:text="-"
+            android:textSize="10pt"
+            />
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
